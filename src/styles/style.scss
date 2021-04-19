@@ -1,63 +1,79 @@
 * {
   
   color: #41658a;
-  background-color: #FFEEA8;
+  // background-color: #FFEEA8;
   box-sizing: border-box;
   margin: auto;
   font-family: 'Roboto Slab', serif;
-  display: flex;
+  // display: flex;
+}
 
+body {
+  background-image: url('https://i.imgur.com/OvYI9cm.png');
+  background-size: cover;
+  height: 100vh;
+}
+
+#root {
+  // flex-direction: column;
+  height: 100vh;
 }
 
 ::selection {
-  background-color: #BDC0F7;
-  color: white;
+  background-color: #FDD9E3;
+  // color: white;
 }
 
-cursor {
-  color: red;
-}
+// style {
+//   display: none;
+// }
 
-style {
-  display: none;
-}
+// header {
+//   display: none;
+// }
 
-header {
-  display: none;
-}
-
-title {
-  display: none;
-}
+// title {
+//   display: none;
+// }
 
 .menu-nav {
-  background-color: white;
-  margin-right: 50px;
-  padding: 30px;
-  align-items: center;
+  // background-color: white;
+  margin: 0;
+  display: flex;
 
   .menu-list {
-    flex-direction: column;
+    display: flex;
+    flex-direction: row;
     background-color: white;
-    text-align: center;
     padding: 0;
+    margin: 0;
+    list-style:none;
+    justify-content: space-between;
     
     li {
+      display: flex;
       background-color: white;
-    }
-    
-    .menu-list-link {
-      list-style: none;
+      // justify-content: space-around;
       text-decoration: none;
-      background-color: white;
-      color: #42EBE6;
-      font-weight: bold;
-      font-size: 30px;
+
+    }
+  }
+}
+
+a {
+  text-decoration: none;
+  background-color: white;
+
+  &.menu-list-link {
+    color: #42EBE6;
+    font-weight: bold;
+    font-size: 25px;
+    padding: 0 10px;
 
       &:hover {
-        color: #119F9A;
+        // color: #119F9A;
+        text-decoration: line-through;
       }
-    }
   }
 }
 
@@ -79,6 +95,13 @@ h2 {
   background-color: white;
   text-align: center;
   padding: 0;
+  margin: 0;
+
+    &.section-header {
+      color: #9FA3E4;
+      font-size: 30px;
+      
+    }
 
 }
 
@@ -86,35 +109,150 @@ h3 {
   background-color: white;
   text-align: center;
   padding: 0;
+
+    &.proj-subhead {
+      color: #42EBE6;
+    }
+}
+
+.header-container {
+  display: flex;
+  display: row;
+  justify-content: center;
 }
 
 .section-container {
   height: 100vh;
+  display: flex;
   flex-direction: row;
   align-items: center;
+  max-width:  70%;
 }
 
 .col-div {
   flex-direction: column;
-  margin-left: 50px;
+  margin-right: 30px;
+  justify-content: center;
+
+   
 }
 
-.section-header {
-  background-color: white;
-  color: #FDD9E3;
-  text-align: center;
-  padding: 0;
-  
-}
-
+// Add new class for about me paragraph to give it a max-width
 p {
   background-color: white;
   text-align: center;
   padding: 20px;
+  font-size: 18px;
+  margin-right: 25px;
+  margin-left: 25px;
 }
 
 .smaller-me {
   border-radius: 100%;
   border: 10px solid white;
 }
+
+.skills-grid {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+}
+
+.skills-row, .icon-pair, label, i {
+  background-color: white;
+  
+}
+
+.skills-row {
+  display: flex;
+  display: row;
+  justify-content: space-evenly;
+  // padding: 10px;
+}
+
+.icon-pair {
+  height: 100px;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  position: relative;
+  display: flex;
+}
+
+.icon-label {
+  display: none;
+  
+}
+
+i {
+  font-size: 60px;
+  color: #FF89BF;
+  padding: 10px;
+}
+
+
+.icon-pair:hover {
+  .icon-label {
+    display: block;
+    position: absolute;
+    top: 40px;
+    background-color: white;
+  }
+}
+
+.projects {
+  color: #42EBE6;
+
+  &:hover {
+    cursor: pointer;
+    text-decoration: line-through;
+  }
+}
+
+.proj-container {
+  display: flex;
+  flex-direction: row;
+  height: 100vh;
+  align-items: center;
+  max-width: 70%;
+}
+
+.proj-row-container{  
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+ 
+}
+
+.proj-subhead {
+  padding: 10px 0;
+  background-color: white;
+}
+
+.projCol {
+  background-color: white;
+}
+
+#projImage {
+  margin: 0;
+  padding: 10px;
+}
+
+p.proj {
+  margin: 0;
+}
+
+.iconsContainer {
+  display: flex;
+  flex-direction: row;
+  padding-top: 10px;
+
+}
+
+#icon {
+  font-size: 25px;
+  padding: 0;
+}
+  
+  
 

@@ -3,7 +3,8 @@ import { BrowserRouter, Switch, Route } from 'react-router-dom'
 import Home from './components/Home'
 import Menu from './components/Menu'
 import AboutMe from './components/AboutMe'
-
+import Experience from './components/Experience'
+import Projects from './components/Projects'
 
 import './styles/style.scss'
 
@@ -15,6 +16,8 @@ const App = () => (
     <Switch>
       <Route exact path="/portfolio" component={Home}/>
       <Route exact path="/about-me" component={AboutMe}/>
+      <Route exact path="/experience" component={Experience}/>
+      <Route exact path="/projects" component={Projects}/>
 
     </Switch>
 

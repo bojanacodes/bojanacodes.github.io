@@ -28,7 +28,7 @@ export default function Menu() {
       </li>
 
       <li>
-        <Link to={'/contact-me'} className="menu-list-link">Contact Me</Link>
+        <Link to={'/contact'} className="menu-list-link">Contact</Link>
       </li>
 
 
