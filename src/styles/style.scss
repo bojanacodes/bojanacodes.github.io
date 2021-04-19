@@ -11,11 +11,19 @@ $queenblue: #41658a;
 $red: #ff7d7d;
 $blue: #18668d;
 $pink: #ffe1e1;
-$white: #fffbf2;
+// $white: #fffbf2;
+
+$lightgreen: #dde7e6;
+$darkbrown: #716271;
+$lightbrown: #BFB5BF;
+$darkgreen: #acc4c4;
+$blue: #2A5B7C;
+$white: #ffffff;
+
 
 
 * {
-  color: $blue;
+  color: $darkbrown;
   box-sizing: border-box;
   margin: auto;
   font-family: 'Roboto Slab', serif;
@@ -24,11 +32,11 @@ $white: #fffbf2;
 
 
 body {
-  background-color: $pink;
+  background-color: $lightgreen;
 }
 
 .main-home {
-  background-image: url('https://i.imgur.com/Mu2eRr8.png');
+  background-image: url('https://i.imgur.com/uj1Byqs.png?1');
   background-size: cover;
   height: 100vh;
 }
@@ -38,13 +46,15 @@ body {
 }
 
 ::selection {
-  background-color: $paleblue;
+  // background-color: $paleblue;
 }
 
 .menu-nav {
   // background-color: white;
   margin: 0;
   display: flex;
+  align-items: center;
+  justify-content: center;
 
   .menu-list {
     display: flex;
@@ -71,13 +81,13 @@ a {
 
   &.menu-list-link {
     
-    color: $red;
+    color: $blue;
     font-weight: bold;
     font-size: 25px;
     padding: 0 10px;
 
       &:hover {
-        color:$blue;
+        color:$lightbrown;
       }
   }
 }
@@ -110,6 +120,7 @@ h2 {
 
     &.homepageTitle {
       background-color: $white;
+      border-radius: 7px;
     }
 
 }
@@ -120,7 +131,7 @@ h3 {
   padding: 0;
 
     &.proj-subhead {
-      color: $red;
+      color: $darkbrown;
     }
 
     &.proj {
@@ -130,6 +141,8 @@ h3 {
 
     &.homepageTitle {
       background-color: $white;
+      border-radius: 7px 7px 0px 0px;
+      padding: 5px;
     }
 }
 
@@ -161,11 +174,20 @@ p {
   margin-right: 25px;
   margin-left: 25px;
   text-align: justify;
+
+  &.proj {
+    margin: 0;
+    
+  }
+
+  &.me {
+    padding: 10px;
+  }
 }
 
 .smaller-me {
-  border-radius: 100%;
-  border: 10px solid $white;
+  border-radius: 10px;
+  border: 2px solid $blue;
 }
 
 
@@ -227,17 +249,17 @@ i {
     display: block;
     position: absolute;
     top: 40px;
-    background-color: $pink;
+    background-color: $lightgreen;
     font-weight: bold;
   }
 }
 
 .projects {
-  color: $red;
+  color: $blue;
 
   &:hover {
     cursor: pointer;
-    color: $blue;
+    color: $lightbrown;
   }
 }
 
@@ -268,13 +290,12 @@ i {
 
 #projImage {
   margin: 0;
-  padding: 10px;
+  // padding: 10px;
+  border: 2px solid $blue;
+  border-radius: 10px;
 }
 
-p.proj {
-  margin: 0;
-  
-}
+
 
 .iconsContainer {
   display: flex;
@@ -307,4 +328,19 @@ p.proj {
   padding-bottom: 15px;
 }
   
+// .footer {
+//   margin-top: 10px;
+//   padding-top: 10px;
+//   display: flex;
+//   flex-direction: column;
+  
+// }
+
+// .footerImg {
+//   height: 50px;
+//   width: 100%;
+//   background-image: url('https://i.imgur.com/uj1Byqs.png?1');
+//   background-size: cover;
+//   background-position: center bottom;
+// }
 

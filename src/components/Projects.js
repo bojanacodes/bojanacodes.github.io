@@ -2,25 +2,20 @@ import React, { useState } from 'react'
 import projectData from './ProjectData.js'
 import { Link } from 'react-router-dom'
 
+
 export default function Projects() {
 
   const [projectSelected, updateProjectSelected] = useState(projectData[0])
-
 
   function handleProjects(e) {
     updateProjectSelected(projectData[e.target.id])
   }
 
 
-
-
   return <main className="proj-container">
-
 
     {projectSelected.map((item, i) => {
       return <div key={i} className="main-container">
-
-
 
         <div className="proj-row-container">
 
@@ -64,15 +59,9 @@ export default function Projects() {
 
           </div>
         </div>
-
+        
       </div >
     })}
-
-
-
-
-
-
 
   </main >
 
