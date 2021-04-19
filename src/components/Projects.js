@@ -20,22 +20,26 @@ export default function Projects() {
     {projectSelected.map((item, i) => {
       return <div key={i} className="main-container">
 
-        <div className="header-container">
-          <h2 className="section-header">Projects</h2>
-        </div>
 
-        <div className="proj-subhead-container">
-          <h3 className="proj-subhead">
-            <span className="projects" onClick={handleProjects} id="0">Project 4 </span> |   <span className="projects" onClick={handleProjects} id="1">Project 3 </span> | <span className="projects" onClick={handleProjects} id="2">Project 2 </span> | <span className="projects" onClick={handleProjects} id="3">Project 1 </span>
-          </h3>
-        </div>
 
         <div className="proj-row-container">
+
           <div className="projCol">
             <img src={item.image} id="projImage" width="500" />
           </div>
 
           <div className="projCol">
+
+            {/* <div className="header-container">
+          <h2 className="section-header">Projects</h2>
+        </div> */}
+
+            <div className="proj-subhead-container">
+              <h3 className="proj-subhead">
+                <span> Projects: </span>
+                <span className="projects" onClick={handleProjects} id="0"> 1 </span> |   <span className="projects" onClick={handleProjects} id="1"> 2 </span> | <span className="projects" onClick={handleProjects} id="2"> 3 </span> | <span className="projects" onClick={handleProjects} id="3"> 4 </span>
+              </h3>
+            </div>
 
             <h3 className="proj">{item.name}</h3>
 
@@ -55,7 +59,7 @@ export default function Projects() {
             <div className="iconsContainer" id="secondIcons">
               <Link to={{ pathname: item.github }} target="_blank" > <i className=" devicon-github-original" id="projGithub"></i></Link>
 
-              <Link to={{ pathname: item.link }} target="_blank "><img src="https://i.imgur.com/R9cNyG5.png" className="linkIcon" /></Link>
+              <Link to={{ pathname: item.link }} target="_blank "><img src="https://i.imgur.com/tpz8W81.png" className="linkIcon" /></Link>
             </div>
 
           </div>

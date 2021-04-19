@@ -27,9 +27,9 @@ export default function AboutMe() {
       <div className="contact-container"> 
         <Link to={{ pathname: 'https://github.com/bojanacodes' }} target="_blank" > <i className=" devicon-github-original"></i></Link>
 
-        <Link to={{ pathname: 'https://www.linkedin.com/in/bojana-sarenac' }} target="_blank" > <img src="https://i.imgur.com/h2p4tX4.png" id="linkedin" /> </Link>
+        <Link to={{ pathname: 'https://www.linkedin.com/in/bojana-sarenac' }} target="_blank" > <i className='devicon-linkedin-plain'></i> </Link>
 
-        <a href="mailto: bojanacodes@gmail.com"> <img src="https://i.imgur.com/DxfN1n3.png" id="email" /> </a>
+        <a href="mailto: bojanacodes@gmail.com"> <img src="https://i.imgur.com/5Fz7xsQ.png" id="email" /> </a>
 
       </div>
 
