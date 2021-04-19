@@ -1,12 +1,20 @@
 * {
   
   color: #41658a;
-  // background-color: #FFEEA8;
   box-sizing: border-box;
   margin: auto;
   font-family: 'Roboto Slab', serif;
-  // display: flex;
 }
+
+
+$darkpink: #FF89BF;
+$palepink: #FDD9E3;
+$yellow: #FFEEA8;
+$paleblue: #E0F8FC;
+$skyblue: #59D7EE;
+$palepurple: #BDC0F7;
+$darkpurple: #9FA3E4;
+$queenblue: #41658a;
 
 body {
   background-image: url('https://i.imgur.com/OvYI9cm.png');
@@ -15,26 +23,12 @@ body {
 }
 
 #root {
-  // flex-direction: column;
   height: 100vh;
 }
 
 ::selection {
-  background-color: #FDD9E3;
-  // color: white;
+  background-color: $paleblue;
 }
-
-// style {
-//   display: none;
-// }
-
-// header {
-//   display: none;
-// }
-
-// title {
-//   display: none;
-// }
 
 .menu-nav {
   // background-color: white;
@@ -65,14 +59,13 @@ a {
   background-color: white;
 
   &.menu-list-link {
-    color: #42EBE6;
+    color: $skyblue;
     font-weight: bold;
     font-size: 25px;
     padding: 0 10px;
 
       &:hover {
-        // color: #119F9A;
-        text-decoration: line-through;
+        color:$queenblue;
       }
   }
 }
@@ -94,11 +87,11 @@ a {
 h2 {
   background-color: white;
   text-align: center;
-  padding: 0;
+  padding: 5px;
   margin: 0;
 
     &.section-header {
-      color: #9FA3E4;
+      color: $darkpurple;
       font-size: 30px;
       
     }
@@ -111,7 +104,12 @@ h3 {
   padding: 0;
 
     &.proj-subhead {
-      color: #42EBE6;
+      color: $skyblue;
+    }
+
+    &.proj {
+      font-size: 25px;
+      padding-bottom: 15px;
     }
 }
 
@@ -126,7 +124,7 @@ h3 {
   display: flex;
   flex-direction: row;
   align-items: center;
-  max-width:  70%;
+  max-width:  80%;
 }
 
 .col-div {
@@ -137,14 +135,14 @@ h3 {
    
 }
 
-// Add new class for about me paragraph to give it a max-width
 p {
   background-color: white;
-  text-align: center;
+  // text-align: center;
   padding: 20px;
   font-size: 18px;
   margin-right: 25px;
   margin-left: 25px;
+  text-align: justify;
 }
 
 .smaller-me {
@@ -186,7 +184,7 @@ p {
 
 i {
   font-size: 60px;
-  color: #FF89BF;
+  color: $darkpink;
   padding: 10px;
 }
 
@@ -201,11 +199,11 @@ i {
 }
 
 .projects {
-  color: #42EBE6;
+  color: $skyblue;
 
   &:hover {
     cursor: pointer;
-    text-decoration: line-through;
+    color: $queenblue;
   }
 }
 
@@ -227,6 +225,7 @@ i {
 .proj-subhead {
   padding: 10px 0;
   background-color: white;
+  font-size: 25px;
 }
 
 .projCol {
@@ -240,19 +239,57 @@ i {
 
 p.proj {
   margin: 0;
+  
 }
 
 .iconsContainer {
   display: flex;
   flex-direction: row;
-  padding-top: 10px;
+  // padding-top: 10px;
+  // padding-bottom: 10px;
+  justify-content: center;
+  
+}
 
+.projIcons {
+  margin: 0;
 }
 
 #icon {
-  font-size: 25px;
-  padding: 0;
+  font-size:30px;
+}
+
+#projGithub {
+  font-size: 50px;
+  padding: 0px;
+}
+
+.linkIcon {
+  width: 50px;
+}
+
+.contact-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: baseline;
+  background-color: white;
+  margin-right: 25px;
+  margin-left: 25px;
+  padding-bottom: 10px;
+}
+
+#linkedin {
+  width: 60px;
+
+}
+
+#email {
+  width: 60px;
 }
   
+#secondIcons {
+  padding-bottom: 15px;
+}
   
 

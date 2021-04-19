@@ -12,25 +12,16 @@ export default function Menu() {
       </li>
 
       <li>
-        <Link to={'/about-me'} className="menu-list-link">About Me</Link>
+        <Link to={'/portfolio/about-me'} className="menu-list-link">About Me</Link>
       </li>
 
       <li>
-        <Link to={'/experience'} className="menu-list-link">Experience</Link>
+        <Link to={'/portfolio/experience'} className="menu-list-link">Experience</Link>
       </li>
 
       <li>
-        <Link to={'/projects'} className="menu-list-link">Projects</Link>
+        <Link to={'/portfolio/projects'} className="menu-list-link">Projects</Link>
       </li>
-
-      <li>
-        <Link to={'/interests'} className="menu-list-link">Interests</Link>
-      </li>
-
-      <li>
-        <Link to={'/contact'} className="menu-list-link">Contact</Link>
-      </li>
-
 
     </ul>
 

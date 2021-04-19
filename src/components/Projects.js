@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import projectData from './ProjectData.js'
+import { Link } from 'react-router-dom'
 
 export default function Projects() {
 
@@ -50,10 +51,17 @@ export default function Projects() {
 
 
             <p className="proj">{item.description}</p>
+
+            <div className="iconsContainer" id="secondIcons">
+              <Link to={{ pathname: item.github }} target="_blank" > <i className=" devicon-github-original" id="projGithub"></i></Link>
+
+              <Link to={{ pathname: item.link }} target="_blank "><img src="https://i.imgur.com/R9cNyG5.png" className="linkIcon" /></Link>
+            </div>
+
           </div>
         </div>
 
-      </div>
+      </div >
     })}
 
 
@@ -62,6 +70,6 @@ export default function Projects() {
 
 
 
-  </main>
+  </main >
 
 }
