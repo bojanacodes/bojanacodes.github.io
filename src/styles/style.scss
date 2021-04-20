@@ -1,6 +1,6 @@
 $lightgreen: #dde7e6;
-$darkbrown: #716271;
-$lightbrown: #BFB5BF;
+$darkbrown: #584C58;
+$lightbrown: #716271;
 $darkgreen: #acc4c4;
 $lightblue: #a4c8e0;
 $blue: #2A5B7C;
@@ -13,8 +13,6 @@ $white: #ffffff;
   font-family: 'Roboto Slab', serif;
 }
 
-
-
 body {
   background-color: $lightgreen;
 }
@@ -22,15 +20,12 @@ body {
 .main-home {
   background-image: url('https://i.imgur.com/uj1Byqs.png?1');
   background-size: cover;
-  height: 100vh;
-}
-
-#root {
-  height: 100vh;
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
 }
 
 .menu-nav {
-  // background-color: white;
   margin: 0;
   display: flex;
   align-items: center;
@@ -39,7 +34,6 @@ body {
   .menu-list {
     display: flex;
     flex-direction: row;
-    // background-color: white;
     padding: 0;
     margin: 0;
     list-style:none;
@@ -47,12 +41,13 @@ body {
     
     li {
       display: flex;
-      // background-color: white;
-      // justify-content: space-around;
       text-decoration: none;
-
     }
   }
+}
+
+.footer {
+  text-align: center;
 }
 
 a {
@@ -80,12 +75,6 @@ a {
   }
 }
 
-.main-home {
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-}
-
 .hp-container {
   display: flex;
   flex-direction: column;
@@ -108,7 +97,6 @@ h2 {
       background-color: $white;
       border-radius: 7px 7px 0px 0px;
     }
-
 }
 
 h3 {
@@ -138,7 +126,7 @@ h3 {
 }
 
 .section-container {
-  height: 100vh;
+  height: 90vh;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -176,7 +164,6 @@ p {
   max-width: 250px;
 }
 
-
 .contact-container {
   display: flex;
   flex-direction: row;
@@ -190,7 +177,6 @@ p {
 #githubLinkIcon:hover {
   color: $lightbrown;
 }
-
 
 #linkedInLinkIcon:hover {
   color: $lightbrown;
@@ -209,6 +195,10 @@ p {
 .skills-grid {
   display: flex;
   flex-direction: column;
+}
+
+.skills-grid-mobile {
+  display: none;
 }
 
 .skills-row {
@@ -236,7 +226,6 @@ i {
   padding: 10px;
   background-color: none;
 }
-
 
 .icon-pair:hover {
   .icon-label {
@@ -278,21 +267,25 @@ i {
 
 #projNumbers {
   border-bottom: 2px solid $blue;
-  // padding: 5px;
 }
 
 .projTextCol {
-  // background-color: white;
   margin-left: 20px;
 }
 
-#projImageCol {
+.projImageCol {
   margin: 0 20px;
   // padding: 10px;
   border: 2px solid $blue;
   border-radius: 10px;
+  max-width: 500px;
 }
 
+#tictac {
+  max-width: 400px;
+  margin-left: 50px;
+  margin-right: 50px;
+}
 
 
 .iconsContainer {
@@ -324,16 +317,128 @@ i {
   width: 50px;
 }
 
+@media screen and (max-width: 600px)  {
+
+  // body {
+  //   background-color: $lightblue;
+  // }
+
+ 
+
+}
 
 
+@media screen and (max-width: 400px)  {
+
   
-// .footer {
-//   margin-top: 10px;
-//   padding-top: 10px;
-//   display: flex;
-//   flex-direction: column;
+
+  .hp-container {
+    font-size: 25px;
+  }
+
+  h2.section-header {
+    font-size:20px;
+  }
+
+  h3{
+    &.homepageTitle {
+      padding: 0;
+      margin: 0;
+    }
+  }
+
+  .main-container {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
   
-// }
+  .section-container {
+
+    display:flex;
+    flex-direction: column;
+    margin-top: 20px;
+    max-width: 100%;
+    // height: auto;
+    // width: auto;
+  }
+
+  .smaller-me {
+    margin-bottom: 10px;
+  }
+
+  a.menu-list-link {
+    font-size: 20px;
+    padding: 0 5px;
+  }
+  
+  .col-div {
+    justify-content: center;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  p {
+    margin: 0;
+    text-align: center;
+
+    &.me {
+      padding: 20px;
+    }
+
+    &.proj {
+      padding: 20px;
+    }
+  }
+
+  .iconsContainer {
+    justify-content: center;
+  }
+
+  #contactIcons {
+    justify-content: center;
+  }
+
+  .proj-col {
+    margin-left: 0px;
+    margin-right: 20px;
+  }
+
+  #tictac {
+    width: 350px;
+  }
+  
+
+  .skills-grid {
+    display: none;
+  }
+
+  .skills-grid-mobile {
+    display: block;
+  }
+
+  .proj-row-container {
+    flex-direction: column;
+  }
+
+  .projImageCol {
+    width: 350px;
+    margin-top: 20px;
+  }
+
+  #tictac {
+    max-width: 300px;
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+
+
+  .footer {
+    display: none;
+
+  }
+
+}
+
 
 
 

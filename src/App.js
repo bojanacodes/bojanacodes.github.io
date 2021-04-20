@@ -5,7 +5,7 @@ import Menu from './components/Menu'
 import AboutMe from './components/AboutMe'
 import Experience from './components/Experience'
 import Projects from './components/Projects'
-// import Footer from './components/Footer'
+import Footer from './components/Footer'
 
 
 import './styles/style.scss'
@@ -23,7 +23,7 @@ const App = () => (
 
     </Switch>
 
-    {/* <Footer /> */}
+    <Footer />
 
   </BrowserRouter>
 )
