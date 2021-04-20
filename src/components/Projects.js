@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import projectData from './ProjectData.js'
 import { Link } from 'react-router-dom'
+import { HiExternalLink } from 'react-icons/hi'
 
 
 export default function Projects() {
@@ -12,7 +13,7 @@ export default function Projects() {
   }
 
 
-  return <main className="proj-container">
+  return <main className="section-container">
 
     {projectSelected.map((item, i) => {
       return <div key={i} className="main-container">
@@ -20,23 +21,25 @@ export default function Projects() {
         <div className="proj-row-container">
 
           <div className="projCol">
-            <img src={item.image} id="projImage" width="500" />
+            <img src={item.image} id="projImageCol" width="500" />
           </div>
 
-          <div className="projCol">
+          <div className="projCol" id="projTextCol">
 
             {/* <div className="header-container">
           <h2 className="section-header">Projects</h2>
         </div> */}
 
-            <div className="proj-subhead-container">
-              <h3 className="proj-subhead">
-                <span> Projects: </span>
-                <span className="projects" onClick={handleProjects} id="0"> 1 </span> |   <span className="projects" onClick={handleProjects} id="1"> 2 </span> | <span className="projects" onClick={handleProjects} id="2"> 3 </span> | <span className="projects" onClick={handleProjects} id="3"> 4 </span>
-              </h3>
-            </div>
+            {/* <div className="proj-subhead-container"> */}
+            <h3 className="proj-subhead">
+              <span> Projects </span>
+            </h3>
+            <h3 className="proj-subhead" id="projNumbers">
+              <span className="projects" onClick={handleProjects} id="0"> 1 </span> |   <span className="projects" onClick={handleProjects} id="1"> 2 </span> | <span className="projects" onClick={handleProjects} id="2"> 3 </span> | <span className="projects" onClick={handleProjects} id="3"> 4 </span>
+            </h3>
+            {/* </div> */}
 
-            <h3 className="proj">{item.name}</h3>
+            <h3 className="proj-subhead">{item.name}</h3>
 
             <div className="iconsContainer">
               {item.icons.map((item, i) => {
@@ -48,18 +51,17 @@ export default function Projects() {
               })}
             </div>
 
-
             <p className="proj">{item.description}</p>
 
-            <div className="iconsContainer" id="secondIcons">
-              <Link to={{ pathname: item.github }} target="_blank" > <i className=" devicon-github-original" id="projGithub"></i></Link>
+            <div className="iconsContainer">
+              <Link to={{ pathname: item.github }} target="_blank" className="iconLink"> <i className=" devicon-github-original" id="githubLinkIcon"></i></Link>
 
-              <Link to={{ pathname: item.link }} target="_blank "><img src="https://i.imgur.com/tpz8W81.png" className="linkIcon" /></Link>
+              <Link to={{ pathname: item.link }} target="_blank " className="iconLink"><HiExternalLink className="reactIcon" /></Link>
             </div>
 
           </div>
         </div>
-        
+
       </div >
     })}
 

@@ -1,26 +1,10 @@
-
-$darkpink: #FF89BF;
-$palepink: #FDD9E3;
-$yellow: #FFEEA8;
-$paleblue: #E0F8FC;
-$skyblue: #59D7EE;
-$palepurple: #BDC0F7;
-$darkpurple: #9FA3E4;
-$queenblue: #41658a;
-
-$red: #ff7d7d;
-$blue: #18668d;
-$pink: #ffe1e1;
-// $white: #fffbf2;
-
 $lightgreen: #dde7e6;
 $darkbrown: #716271;
 $lightbrown: #BFB5BF;
 $darkgreen: #acc4c4;
+$lightblue: #a4c8e0;
 $blue: #2A5B7C;
 $white: #ffffff;
-
-
 
 * {
   color: $darkbrown;
@@ -43,10 +27,6 @@ body {
 
 #root {
   height: 100vh;
-}
-
-::selection {
-  // background-color: $paleblue;
 }
 
 .menu-nav {
@@ -77,7 +57,6 @@ body {
 
 a {
   text-decoration: none;
-  // background-color: white;
 
   &.menu-list-link {
     
@@ -89,6 +68,15 @@ a {
       &:hover {
         color:$lightbrown;
       }
+  }
+
+  &.iconLink {
+    color: $blue;
+    margin: 5px;
+
+    &:hover {
+      color:$lightbrown;
+    }
   }
 }
 
@@ -107,7 +95,6 @@ a {
 }
 
 h2 {
-  // background-color: white;
   text-align: center;
   padding: 5px;
   margin: 0;
@@ -115,18 +102,16 @@ h2 {
     &.section-header {
       color: $blue;
       font-size: 30px;
-      
     }
 
     &.homepageTitle {
       background-color: $white;
-      border-radius: 7px;
+      border-radius: 7px 7px 0px 0px;
     }
 
 }
 
 h3 {
-  // background-color: white;
   text-align: center;
   padding: 0;
 
@@ -141,7 +126,7 @@ h3 {
 
     &.homepageTitle {
       background-color: $white;
-      border-radius: 7px 7px 0px 0px;
+      border-radius: 7px;
       padding: 5px;
     }
 }
@@ -163,12 +148,11 @@ h3 {
 .col-div {
   flex-direction: column;
   margin-right: 30px;
+  margin-left:30px;
   justify-content: center;
 }
 
 p {
-  // background-color: white;
-  // text-align: center;
   padding: 20px;
   font-size: 18px;
   margin-right: 25px;
@@ -176,18 +160,20 @@ p {
   text-align: justify;
 
   &.proj {
-    margin: 0;
-    
+    margin: 0px;
+    padding: 10px 0;
   }
 
   &.me {
-    padding: 10px;
+    padding: 10px 0px;
+    margin: 0;
   }
 }
 
 .smaller-me {
   border-radius: 10px;
   border: 2px solid $blue;
+  max-width: 250px;
 }
 
 
@@ -196,31 +182,39 @@ p {
   flex-direction: row;
   justify-content: center;
   align-items: baseline;
-  // background-color: white;
   margin-right: 25px;
   margin-left: 25px;
   padding-bottom: 10px;
 }
 
-#linkedin {
-  width: 60px;
-
+#githubLinkIcon:hover {
+  color: $lightbrown;
 }
 
-#email {
-  width: 60px;
+
+#linkedInLinkIcon:hover {
+  color: $lightbrown;
+}
+
+.reactIcon {
+  font-size: 100px;
+  padding-bottom: 35px;
+  margin-left: -15px;
+  fill: $blue;
+
+    &:hover{
+      fill: $lightbrown;
+    }
 }
 .skills-grid {
   display: flex;
   flex-direction: column;
-  // background-color: white;
 }
 
 .skills-row {
   display: flex;
   display: row;
   justify-content: space-evenly;
-  // padding: 10px;
 }
 
 .icon-pair {
@@ -263,16 +257,15 @@ i {
   }
 }
 
-.proj-container {
-  display: flex;
-  flex-direction: row;
-  height: 100vh;
-  align-items: center;
-  max-width: 70%;
-}
+// .proj-container {
+//   display: flex;
+//   flex-direction: row;
+//   height: 100vh;
+//   align-items: center;
+//   max-width: 70%;
+// }
 
 .proj-row-container{  
-  // background-color: white;
   display: flex;
   flex-direction: row;
  
@@ -280,16 +273,21 @@ i {
 
 .proj-subhead {
   padding: 10px 0;
-  // background-color: white;
   font-size: 25px;
 }
 
-.projCol {
-  // background-color: white;
+#projNumbers {
+  border-bottom: 2px solid $blue;
+  // padding: 5px;
 }
 
-#projImage {
-  margin: 0;
+.projTextCol {
+  // background-color: white;
+  margin-left: 20px;
+}
+
+#projImageCol {
+  margin: 0 20px;
   // padding: 10px;
   border: 2px solid $blue;
   border-radius: 10px;
@@ -303,7 +301,10 @@ i {
   // padding-top: 10px;
   // padding-bottom: 10px;
   justify-content: center;
-  
+}
+
+#contactIcons {
+  justify-content: flex-start;
 }
 
 .projIcons {
@@ -323,10 +324,8 @@ i {
   width: 50px;
 }
 
-  
-#secondIcons {
-  padding-bottom: 15px;
-}
+
+
   
 // .footer {
 //   margin-top: 10px;
@@ -336,11 +335,5 @@ i {
   
 // }
 
-// .footerImg {
-//   height: 50px;
-//   width: 100%;
-//   background-image: url('https://i.imgur.com/uj1Byqs.png?1');
-//   background-size: cover;
-//   background-position: center bottom;
-// }
+
 
