@@ -19,9 +19,9 @@ export default function Projects() {
       return <div key={i} className="mainContainer">
 
         <div className="projHeadContainer">
-          <h3 className="projSubhead">
+          <h2 className="sectionHeader">
             Projects
-          </h3>
+          </h2>
           <h3 className="projSubhead" id="projNumbers">
             <span className="projects" onClick={handleProjects} id="0"> 1 </span> |   <span className="projects" onClick={handleProjects} id="1"> 2 </span> | <span className="projects" onClick={handleProjects} id="2"> 3 </span> | <span className="projects" onClick={handleProjects} id="3"> 4 </span>
           </h3>

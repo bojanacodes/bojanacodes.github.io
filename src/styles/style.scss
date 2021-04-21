@@ -23,6 +23,7 @@ body {
   height: 90vh;
   display: flex;
   flex-direction: column;
+  
 }
 
 .menuNav {
@@ -304,7 +305,146 @@ i {
   width: 50px;
 }
 
-@media screen and (max-width: 600px)  {
+
+@media screen and (max-width: 1200px)  {
+ 
+  .hpContainer {
+    font-size: 60px;
+  }
+
+  h3 {
+    &.homepageTitle {
+      padding: 0;
+      margin: 0;
+    }
+  }
+
+  .mainContainer {
+    margin-left: 20px;
+    margin-right: 20px;
+    max-width: 80%;
+  }
+  
+  .sectionContainer {
+    display:flex;
+    flex-direction: column;
+    margin-top: 20px;
+    max-width: 80%;
+  }
+
+  .smallerMe {
+    margin-bottom: 10px;
+    margin-top: 50px;
+  }
+
+  a.menuListLink {
+    font-size: 45px;
+    padding: 0 15px;
+  }
+  
+  .projSubhead {
+    font-size: 35px;
+  }
+
+  h2.sectionHeader {
+    font-size: 45px;
+  }
+
+  .colDiv {
+    justify-content: center;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+
+  p {
+    margin: 0;
+    text-align: center;
+    font-size: 30px;
+
+    &.me {
+      padding: 20px;
+    }
+
+    &.proj {
+      padding: 20px;
+    }
+  }
+
+  .iconsContainer {
+    justify-content: center;
+  }
+
+  #contactIcons {
+    justify-content: center;
+  }
+
+  .projCol {
+    margin-left: 0px;
+    margin-right: 20px;
+    text-align: center;
+  }
+
+  .projects {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  #tictac {
+    width: 350px;
+  }
+
+  .skillsGrid {
+    display: block;
+    padding-top: 20px;
+  }
+
+  .skillsRow {
+    margin-bottom: 40px;
+  }
+
+  i {
+    font-size: 80px;
+  }
+
+  .reactIcon {
+    font-size: 170px;
+    padding-bottom: 78px;
+    margin-left: -30px;
+    fill: $blue;
+  
+      &:hover{
+        fill: $lightbrown;
+      }
+  }
+
+  .skillsGridMobile {
+    display: none;
+  }
+
+  .projRowContainer {
+    flex-direction: column;
+  }
+
+  .projImageCol {
+    max-width: 500px;
+    margin-top: 20px;
+    align-items: center;
+  }
+
+  #tictac {
+    max-width: 350px;
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+
+  .footer {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 800px)  {
 
   .hpContainer {
     font-size: 30px;
@@ -324,17 +464,19 @@ i {
   .mainContainer {
     margin-left: 20px;
     margin-right: 20px;
+    max-width: 90%;
   }
   
   .sectionContainer {
     display:flex;
     flex-direction: column;
     margin-top: 20px;
-    max-width: 100%;
+    max-width: 90%;
   }
 
   .smallerMe {
     margin-bottom: 10px;
+    margin-top: 50px;
   }
 
   a.menuListLink {
@@ -346,6 +488,8 @@ i {
     justify-content: center;
     margin-left: 0;
     margin-right: 0;
+    margin-top: 50px;
+    margin-bottom: 50px;
   }
 
   p {
@@ -370,8 +514,15 @@ i {
   }
 
   .projCol {
+    // display:flex;
     margin-left: 0px;
     margin-right: 20px;
+    text-align: center;
+  }
+
+  .projects {
+    padding-left: 10px;
+    padding-right: 10px;
   }
 
   #tictac {
@@ -391,8 +542,9 @@ i {
   }
 
   .projImageCol {
-    width: 400px;
+    max-width: 500px;
     margin-top: 20px;
+    align-items: center;
   }
 
   #tictac {
@@ -407,7 +559,7 @@ i {
 }
 
 
-@media screen and (max-width: 400px)  {
+@media screen and (max-width: 500px)  {
 
 
   .hpContainer {
@@ -444,7 +596,7 @@ i {
   .menuList {
     padding: 5px;
   }
-  
+
   a.menuListLink {
     font-size: 20px;
     padding: 0 5px;
@@ -479,8 +631,9 @@ i {
   }
 
   .projCol {
-    margin-left: 0px;
+    margin-left: 20px;
     margin-right: 20px;
+    justify-content: center;
   }
 
   #tictac {
@@ -500,8 +653,9 @@ i {
   }
 
   .projImageCol {
-    width: 350px;
+    width: 330px;
     margin-top: 20px;
+    justify-content: center;
   }
 
   #tictac {
