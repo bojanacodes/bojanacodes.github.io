@@ -409,7 +409,7 @@ i {
 
 @media screen and (max-width: 400px)  {
 
-  
+
   .hpContainer {
     font-size: 25px;
   }
@@ -441,9 +441,14 @@ i {
     margin-bottom: 10px;
   }
 
+  .menuList {
+    padding: 5px;
+  }
+  
   a.menuListLink {
     font-size: 20px;
     padding: 0 5px;
+    text-align: center;
   }
   
   .colDiv {
@@ -511,6 +516,12 @@ i {
   }
 
 }
+
+
+
+
+
+
 
 
 

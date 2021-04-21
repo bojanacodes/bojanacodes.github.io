@@ -32,7 +32,7 @@ export default function Projects() {
 
 
           <div className="projCol">
-            <img src={item.image} className="projImageCol"  id={item.cssId}/>
+            <img src={item.image} className="projImageCol"  id={item.cssId} alt={`${item.name} screenshot.`} />
           </div>
 
           <div className="projCol" id="projTextCol">
