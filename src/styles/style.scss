@@ -17,7 +17,7 @@ body {
   background-color: $lightgreen;
 }
 
-.main-home {
+.mainHome {
   background-image: url('https://i.imgur.com/uj1Byqs.png?1');
   background-size: cover;
   height: 90vh;
@@ -25,13 +25,13 @@ body {
   flex-direction: column;
 }
 
-.menu-nav {
+.menuNav {
   margin: 0;
   display: flex;
   align-items: center;
   justify-content: center;
 
-  .menu-list {
+  .menuList {
     display: flex;
     flex-direction: row;
     padding: 0;
@@ -53,7 +53,7 @@ body {
 a {
   text-decoration: none;
 
-  &.menu-list-link {
+  &.menuListLink {
     
     color: $blue;
     font-weight: bold;
@@ -75,7 +75,7 @@ a {
   }
 }
 
-.hp-container {
+.hpContainer {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -88,7 +88,7 @@ h2 {
   padding: 5px;
   margin: 0;
 
-    &.section-header {
+    &.sectionHeader {
       color: $blue;
       font-size: 30px;
     }
@@ -103,7 +103,7 @@ h3 {
   text-align: center;
   padding: 0;
 
-    &.proj-subhead {
+    &.projSubhead {
       color: $darkbrown;
     }
 
@@ -119,13 +119,13 @@ h3 {
     }
 }
 
-.header-container {
+.headerContainer {
   display: flex;
   display: row;
   justify-content: center;
 }
 
-.section-container {
+.sectionContainer {
   height: 90vh;
   display: flex;
   flex-direction: row;
@@ -133,7 +133,7 @@ h3 {
   max-width:  80%;
 }
 
-.col-div {
+.colDiv {
   flex-direction: column;
   margin-right: 30px;
   margin-left:30px;
@@ -158,7 +158,7 @@ p {
   }
 }
 
-.smaller-me {
+.smallerMe {
   border-radius: 10px;
   border: 2px solid $blue;
   max-width: 250px;
@@ -192,31 +192,41 @@ p {
       fill: $lightbrown;
     }
 }
-.skills-grid {
+.skillsGrid {
   display: flex;
   flex-direction: column;
 }
 
-.skills-grid-mobile {
+.skillsGridMobile {
   display: none;
 }
 
-.skills-row {
+.skillsRow {
   display: flex;
   display: row;
   justify-content: space-evenly;
 }
 
-.icon-pair {
+.iconPair {
   height: 100px;
   align-items: center;
   justify-content: center;
   padding: 10px;
   position: relative;
   display: flex;
+
+  &:hover {
+    .iconLabel {
+      display: block;
+      position: absolute;
+      top: 40px;
+      background-color: $lightgreen;
+      font-weight: bold;
+    }
+  }
 }
 
-.icon-label {
+.iconLabel {
   display: none;
 }
 
@@ -225,16 +235,6 @@ i {
   color: $blue;
   padding: 10px;
   background-color: none;
-}
-
-.icon-pair:hover {
-  .icon-label {
-    display: block;
-    position: absolute;
-    top: 40px;
-    background-color: $lightgreen;
-    font-weight: bold;
-  }
 }
 
 .projects {
@@ -246,20 +246,12 @@ i {
   }
 }
 
-// .proj-container {
-//   display: flex;
-//   flex-direction: row;
-//   height: 100vh;
-//   align-items: center;
-//   max-width: 70%;
-// }
-
-.proj-row-container{  
+.projRowContainer{  
   display: flex;
   flex-direction: row;
 }
 
-.proj-subhead {
+.projSubhead {
   padding: 10px 0;
   font-size: 25px;
 }
@@ -274,7 +266,6 @@ i {
 
 .projImageCol {
   margin: 0 20px;
-  // padding: 10px;
   border: 2px solid $blue;
   border-radius: 10px;
   max-width: 500px;
@@ -289,8 +280,6 @@ i {
 .iconsContainer {
   display: flex;
   flex-direction: row;
-  // padding-top: 10px;
-  // padding-bottom: 10px;
   justify-content: center;
 }
 
@@ -315,50 +304,45 @@ i {
   width: 50px;
 }
 
-// @media screen and ()
-
 @media screen and (max-width: 600px)  {
 
-  .hp-container {
+  .hpContainer {
     font-size: 30px;
   }
 
-  h2.section-header {
+  h2.sectionHeader {
     font-size:20px;
   }
 
-  h3{
+  h3 {
     &.homepageTitle {
       padding: 0;
       margin: 0;
     }
   }
 
-  .main-container {
+  .mainContainer {
     margin-left: 20px;
     margin-right: 20px;
   }
   
-  .section-container {
-
+  .sectionContainer {
     display:flex;
     flex-direction: column;
     margin-top: 20px;
     max-width: 100%;
-    // height: auto;
-    // width: auto;
   }
 
-  .smaller-me {
+  .smallerMe {
     margin-bottom: 10px;
   }
 
-  a.menu-list-link {
+  a.menuListLink {
     font-size: 20px;
     padding: 0 5px;
   }
   
-  .col-div {
+  .colDiv {
     justify-content: center;
     margin-left: 0;
     margin-right: 0;
@@ -385,7 +369,7 @@ i {
     justify-content: center;
   }
 
-  .proj-col {
+  .projCol {
     margin-left: 0px;
     margin-right: 20px;
   }
@@ -393,17 +377,16 @@ i {
   #tictac {
     width: 350px;
   }
-  
 
-  .skills-grid {
+  .skillsGrid {
     display: block;
   }
 
-  .skills-grid-mobile {
+  .skillsGridMobile {
     display: none;
   }
 
-  .proj-row-container {
+  .projRowContainer {
     flex-direction: column;
   }
 
@@ -418,23 +401,20 @@ i {
     margin-right: 50px;
   }
 
-
   .footer {
     display: none;
-
   }
-
 }
 
 
 @media screen and (max-width: 400px)  {
 
   
-  .hp-container {
+  .hpContainer {
     font-size: 25px;
   }
 
-  h2.section-header {
+  h2.sectionHeader {
     font-size:20px;
   }
 
@@ -445,31 +425,28 @@ i {
     }
   }
 
-  .main-container {
+  .mainContainer {
     margin-left: 20px;
     margin-right: 20px;
   }
   
-  .section-container {
-
+  .sectionContainer {
     display:flex;
     flex-direction: column;
     margin-top: 20px;
     max-width: 100%;
-    // height: auto;
-    // width: auto;
   }
 
-  .smaller-me {
+  .smallerMe {
     margin-bottom: 10px;
   }
 
-  a.menu-list-link {
+  a.menuListLink {
     font-size: 20px;
     padding: 0 5px;
   }
   
-  .col-div {
+  .colDiv {
     justify-content: center;
     margin-left: 0;
     margin-right: 0;
@@ -496,7 +473,7 @@ i {
     justify-content: center;
   }
 
-  .proj-col {
+  .projCol {
     margin-left: 0px;
     margin-right: 20px;
   }
@@ -505,16 +482,15 @@ i {
     width: 350px;
   }
   
-
-  .skills-grid {
+  .skillsGrid {
     display: none;
   }
 
-  .skills-grid-mobile {
+  .skillsGridMobile {
     display: block;
   }
 
-  .proj-row-container {
+  .projRowContainer {
     flex-direction: column;
   }
 
@@ -528,7 +504,6 @@ i {
     margin-left: 50px;
     margin-right: 50px;
   }
-
 
   .footer {
     display: none;

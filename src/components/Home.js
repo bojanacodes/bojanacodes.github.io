@@ -4,9 +4,9 @@ export default function Home() {
 
   return <>
 
-    <main className="main-home">
+    <main className="mainHome">
 
-      <div className="hp-container">
+      <div className="hpContainer">
         <h2 className="homepageTitle">Bojana Sarenac</h2>
         <h3 className="homepageTitle">Junior Software Engineer</h3>
       </div>

@@ -3,24 +3,24 @@ import { Link } from 'react-router-dom'
 
 export default function Menu() {
 
-  return <div className="menu-nav">
+  return <div className="menuNav">
 
-    <ul className="menu-list">
+    <ul className="menuList">
 
       <li>
-        <Link to={'/portfolio'} className="menu-list-link">Home</Link>
+        <Link to={'/portfolio'} className="menuListLink">Home</Link>
       </li>
 
       <li>
-        <Link to={'/portfolio/about-me'} className="menu-list-link">About Me</Link>
+        <Link to={'/portfolio/about-me'} className="menuListLink">About Me</Link>
       </li>
 
       <li>
-        <Link to={'/portfolio/experience'} className="menu-list-link">Experience</Link>
+        <Link to={'/portfolio/experience'} className="menuListLink">Experience</Link>
       </li>
 
       <li>
-        <Link to={'/portfolio/projects'} className="menu-list-link">Projects</Link>
+        <Link to={'/portfolio/projects'} className="menuListLink">Projects</Link>
       </li>
 
     </ul>
@@ -29,23 +29,3 @@ export default function Menu() {
   </div>
 }
 
-// return <div className="nav-bar">
-//     <header>
-//       <h1>Islamic Art in the Cleveland Museum of Art</h1>
-//     </header>
-//     <ul className="nav-bar-links">
-//       <li>
-//         <Link to={'/project-2/'}>Home</Link>
-//       </li>
-//       <li>
-//         <Link to={'/project-2/textiles'}>Textiles</Link>
-//       </li>
-//       <li>
-//         <Link to={url === '/project-2/decorativearts' ? '/project-2/decorativeart2' : '/project-2/decorativearts'  }>Decorative Arts</Link>
-//       </li>
-//       <li>
-//         <Link to={url === '/project-2/books' ? '/project-2/book2' : '/project-2/books'  }>Books</Link>
-//       </li>
-//     </ul>
-
-//   </div>

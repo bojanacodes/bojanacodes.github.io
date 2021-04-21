@@ -2,14 +2,12 @@ import React from 'react'
 
 export default function Experience() {
 
-  return <main className="section-container">
+  return <main className="sectionContainer">
 
-    {/* <img src="https://i.imgur.com/O57q0aI.jpeg" alt="photo of me" className="smaller-me" /> */}
+    <div className="colDiv">
 
-    <div className="col-div">
-
-      <div className="header-container">
-        <h2 className="section-header">Experience</h2>
+      <div className="headerContainer">
+        <h2 className="sectionHeader">Experience</h2>
       </div>
 
       <p>
@@ -18,211 +16,203 @@ export default function Experience() {
 
     </div>
 
-    <div className="col-div">
-      <div className="header-container">
-        <h2 className="section-header">Skills & Technologies</h2>
+    <div className="colDiv">
+      <div className="headerContainer">
+        <h2 className="sectionHeader">Skills & Technologies</h2>
       </div>
 
 
-      <div className="skills-grid">
+      <div className="skillsGrid">
 
 
-        <div className="skills-row">
+        <div className="skillsRow">
 
-          <div className="icon-pair">
+          <div className="iconPair">
             <i className="devicon-javascript-plain"></i>
-            <label className="icon-label">JavaScript</label>
+            <label className="iconLabel">JavaScript</label>
           </div>
 
-          <div className="icon-pair">
+          <div className="iconPair">
             <i className="devicon-python-plain"></i>
-            <label className="icon-label">Python</label>
+            <label className="iconLabel">Python</label>
           </div>
 
-          <div className="icon-pair">
+          <div className="iconPair">
             <i className="devicon-flask-original"></i>
-            <label className="icon-label">Flask</label>
+            <label className="iconLabel">Flask</label>
           </div>
 
-          <div className="icon-pair">
+          <div className="iconPair">
             <i className="devicon-npm-original-wordmark"></i>
-            <label className="icon-label">npm</label>
+            <label className="iconLabel">npm</label>
           </div>
 
-          <div className="icon-pair">
+          <div className="iconPair">
             <i className="devicon-postgresql-plain"></i>
-            <label className="icon-label">PostgreSQL</label>
+            <label className="iconLabel">PostgreSQL</label>
           </div>
 
         </div>
 
-        <div className="skills-row">
+        <div className="skillsRow">
 
-          <div className="icon-pair">
+          <div className="iconPair">
             <i className="devicon-react-original"></i>
-            <label className="icon-label">React</label>
+            <label className="iconLabel">React</label>
           </div>
 
-          <div className="icon-pair">
+          <div className="iconPair">
             <i className="devicon-html5-plain"></i>
-            <label className="icon-label">HTML</label>
+            <label className="iconLabel">HTML</label>
           </div>
 
-          <div className="icon-pair">
+          <div className="iconPair">
             <i className="devicon-css3-plain"></i>
-            <label className="icon-label">CSS</label>
+            <label className="iconLabel">CSS</label>
           </div>
 
-          <div className="icon-pair">
+          <div className="iconPair">
             <i className="devicon-webpack-plain"></i>
-            <label className="icon-label">Webpack</label>
+            <label className="iconLabel">Webpack</label>
           </div>
 
-          <div className="icon-pair">
+          <div className="iconPair">
             <i className="devicon-mongodb-plain"></i>
-            <label className="icon-label">MongoDB</label>
+            <label className="iconLabel">MongoDB</label>
           </div>
 
         </div>
 
-        <div className="skills-row">
+        <div className="skillsRow">
 
-          <div className="icon-pair">
+          <div className="iconPair">
             <i className="devicon-express-original"></i>
-            <label className="icon-label">Express</label>
+            <label className="iconLabel">Express</label>
           </div>
 
-          <div className="icon-pair">
+          <div className="iconPair">
             <i className="devicon-nodejs-plain"></i>
-            <label className="icon-label">Node.js</label>
+            <label className="iconLabel">Node.js</label>
           </div>
 
-          <div className="icon-pair">
+          <div className="iconPair">
             <i className="devicon-sqlalchemy-plain"></i>
-            <label className="icon-label">SQLAlchemy</label>
+            <label className="iconLabel">SQLAlchemy</label>
           </div>
 
-          <div className="icon-pair">
+          <div className="iconPair">
             <i className="devicon-git-plain"></i>
-            <label className="icon-label">Git</label>
+            <label className="iconLabel">Git</label>
           </div>
 
-          <div className="icon-pair">
+          <div className="iconPair">
             <i className="devicon-github-original"></i>
-            <label className="icon-label">GitHub</label>
+            <label className="iconLabel">GitHub</label>
           </div>
 
         </div>
       </div>
 
-      <div className="skills-grid-mobile">
+      <div className="skillsGridMobile">
 
-        <div className="skills-row">
+        <div className="skillsRow">
 
-          <div className="icon-pair">
+          <div className="iconPair">
             <i className="devicon-javascript-plain"></i>
-            <label className="icon-label">JavaScript</label>
+            <label className="iconLabel">JavaScript</label>
           </div>
 
-          <div className="icon-pair">
+          <div className="iconPair">
             <i className="devicon-python-plain"></i>
-            <label className="icon-label">Python</label>
+            <label className="iconLabel">Python</label>
           </div>
 
-          <div className="icon-pair">
+          <div className="iconPair">
             <i className="devicon-flask-original"></i>
-            <label className="icon-label">Flask</label>
+            <label className="iconLabel">Flask</label>
           </div>
 
         </div>
 
-        <div className="skills-row">
+        <div className="skillsRow">
 
-          <div className="icon-pair">
+          <div className="iconPair">
             <i className="devicon-npm-original-wordmark"></i>
-            <label className="icon-label">npm</label>
+            <label className="iconLabel">npm</label>
           </div>
 
-          <div className="icon-pair">
+          <div className="iconPair">
             <i className="devicon-postgresql-plain"></i>
-            <label className="icon-label">PostgreSQL</label>
+            <label className="iconLabel">PostgreSQL</label>
           </div>
 
-          <div className="icon-pair">
+          <div className="iconPair">
             <i className="devicon-react-original"></i>
-            <label className="icon-label">React</label>
+            <label className="iconLabel">React</label>
           </div>
 
         </div>
 
-        <div className="skills-row">
+        <div className="skillsRow">
 
-          <div className="icon-pair">
+          <div className="iconPair">
             <i className="devicon-html5-plain"></i>
-            <label className="icon-label">HTML</label>
+            <label className="iconLabel">HTML</label>
           </div>
 
-          <div className="icon-pair">
+          <div className="iconPair">
             <i className="devicon-css3-plain"></i>
-            <label className="icon-label">CSS</label>
+            <label className="iconLabel">CSS</label>
           </div>
 
-          <div className="icon-pair">
+          <div className="iconPair">
             <i className="devicon-webpack-plain"></i>
-            <label className="icon-label">Webpack</label>
+            <label className="iconLabel">Webpack</label>
           </div>
 
         </div>
 
-        <div className="skills-row">
+        <div className="skillsRow">
 
-          <div className="icon-pair">
+          <div className="iconPair">
             <i className="devicon-mongodb-plain"></i>
-            <label className="icon-label">MongoDB</label>
+            <label className="iconLabel">MongoDB</label>
           </div>
 
-          <div className="icon-pair">
+          <div className="iconPair">
             <i className="devicon-express-original"></i>
-            <label className="icon-label">Express</label>
+            <label className="iconLabel">Express</label>
           </div>
 
-          <div className="icon-pair">
+          <div className="iconPair">
             <i className="devicon-nodejs-plain"></i>
-            <label className="icon-label">Node.js</label>
+            <label className="iconLabel">Node.js</label>
           </div>
 
         </div>
 
-        <div className="skills-row">
+        <div className="skillsRow">
 
-          <div className="icon-pair">
+          <div className="iconPair">
             <i className="devicon-sqlalchemy-plain"></i>
-            <label className="icon-label">SQLAlchemy</label>
+            <label className="iconLabel">SQLAlchemy</label>
           </div>
 
-          <div className="icon-pair">
+          <div className="iconPair">
             <i className="devicon-git-plain"></i>
-            <label className="icon-label">Git</label>
+            <label className="iconLabel">Git</label>
           </div>
 
-          <div className="icon-pair">
+          <div className="iconPair">
             <i className="devicon-github-original"></i>
-            <label className="icon-label">GitHub</label>
+            <label className="iconLabel">GitHub</label>
           </div>
-
-
 
         </div>
-
-
-
-
-
 
       </div>
 
     </div>
-
 
   </main>
 }

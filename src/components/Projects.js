@@ -13,22 +13,22 @@ export default function Projects() {
   }
 
 
-  return <main className="section-container">
+  return <main className="sectionContainer">
 
     {projectSelected.map((item, i) => {
-      return <div key={i} className="main-container">
+      return <div key={i} className="mainContainer">
 
-        <div className="proj-head-container">
-          <h3 className="proj-subhead">
+        <div className="projHeadContainer">
+          <h3 className="projSubhead">
             Projects
           </h3>
-          <h3 className="proj-subhead" id="projNumbers">
+          <h3 className="projSubhead" id="projNumbers">
             <span className="projects" onClick={handleProjects} id="0"> 1 </span> |   <span className="projects" onClick={handleProjects} id="1"> 2 </span> | <span className="projects" onClick={handleProjects} id="2"> 3 </span> | <span className="projects" onClick={handleProjects} id="3"> 4 </span>
           </h3>
 
         </div>
 
-        <div className="proj-row-container">
+        <div className="projRowContainer">
 
 
           <div className="projCol">
@@ -37,15 +37,7 @@ export default function Projects() {
 
           <div className="projCol" id="projTextCol">
 
-            {/* <div className="header-container">
-          <h2 className="section-header">Projects</h2>
-        </div> */}
-
-            {/* <div className="proj-subhead-container"> */}
-
-            {/* </div> */}
-
-            <h3 className="proj-subhead">{item.name}</h3>
+            <h3 className="projSubhead">{item.name}</h3>
 
             <div className="iconsContainer">
               {item.icons.map((item, i) => {
