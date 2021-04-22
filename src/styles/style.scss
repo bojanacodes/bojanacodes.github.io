@@ -458,13 +458,20 @@ i {
     font-size: 30px;
   }
 
-  h2.sectionHeader {
-    font-size:35px;
+  h2 {
+    &.sectionHeader {
+      font-size:35px;
+      // padding: 5px;
+    }
+
+    &.homepageTitle {
+      padding: 8px;
+    }
   }
 
   h3 {
     &.homepageTitle {
-      padding: 0;
+      padding: 5px;
       margin: 0;
     }
   }
@@ -560,20 +567,28 @@ i {
   }
 }
 
-
-@media screen and (max-width: 500px)  {
+@media screen and (max-width: 600px)  {
 
   .hpContainer {
     font-size: 25px;
   }
 
-  h2.sectionHeader {
-    font-size:22px;
+  h2 {
+
+    &.homepageTitle {
+      padding: 8px;
+      
+    }
+
+    &.sectionHeader {
+      font-size:22px;
+      margin: 0;
+    }
   }
 
   h3{
     &.homepageTitle {
-      padding: 0;
+      // padding: 5px;
       margin: 0;
     }
 
@@ -612,6 +627,7 @@ i {
     justify-content: center;
     margin-left: 0;
     margin-right: 0;
+    margin-bottom: 0;
   }
 
   p {
@@ -620,11 +636,12 @@ i {
     font-size: 20px;
 
     &.me {
-      padding: 20px;
+      padding-left: 30px;
+      padding-right: 30px;
     }
 
     &.proj {
-      padding: 20px;
+      padding: 20px 0px;
     }
   }
 
@@ -642,8 +659,15 @@ i {
     justify-content: center;
   }
 
+  .projImageCol {
+    max-width: 400px;
+    margin: 20px 0 0 0;
+    justify-content: center;
+  }
+
   #tictac {
-    width: 350px;
+    max-width: 300px;
+    margin: 20px 0 0 0;
   }
   
   .skillsGrid {
@@ -652,22 +676,12 @@ i {
 
   .skillsGridMobile {
     display: block;
+    margin-top: 15px;
   }
 
   .projRowContainer {
     flex-direction: column;
-  }
-
-  .projImageCol {
-    width: 330px;
-    margin-top: 20px;
-    justify-content: center;
-  }
-
-  #tictac {
-    max-width: 300px;
-    margin-left: 50px;
-    margin-right: 50px;
+    text-align: center;
   }
 
   #githubLinkIcon {
@@ -686,12 +700,321 @@ i {
 
   .footer {
     display: none;
+  }
+}
 
+
+@media screen and (max-width: 500px)  {
+
+  .hpContainer {
+    font-size: 25px;
+  }
+
+  h2 {
+
+    &.homepageTitle {
+      padding: 8px;
+      
+    }
+
+    &.sectionHeader {
+      font-size:22px;
+      margin: 0;
+    }
+  }
+  
+
+  h3{
+    &.homepageTitle {
+      // padding: 5px;
+      margin: 0;
+    }
+
+    &.projSubhead {
+      font-size: 22px;
+    }
+  }
+
+  .mainContainer {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  
+  .sectionContainer {
+    display:flex;
+    flex-direction: column;
+    margin-top: 20px;
+    max-width: 100%;
+  }
+
+  .smallerMe {
+    margin-bottom: 10px;
+  }
+
+  .menuList {
+    padding: 5px;
+  }
+
+  a.menuListLink {
+    font-size: 22px;
+    padding: 0 5px;
+    text-align: center;
+  }
+  
+  .colDiv {
+    justify-content: center;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+  }
+
+  p {
+    margin: 0;
+    text-align: center;
+    font-size: 20px;
+
+    &.me {
+      padding-left: 30px;
+      padding-right: 30px;
+    }
+
+    &.proj {
+      padding: 20px 0px;
+      
+    }
+  }
+
+  .iconsContainer {
+    justify-content: center;
+  }
+
+  #contactIcons {
+    justify-content: center;
+  }
+
+  .projCol {
+    margin-left: 15px;
+    margin-right: 15px;
+    justify-content: center;
+  }
+
+  .projImageCol {
+    max-width: 350px;
+    margin: 20px 0 0 0;
+    justify-content: center;
+  }
+
+  #tictac {
+    max-width: 300px;
+    margin: 20px 0 0 0;
+  }
+  
+  .skillsGrid {
+    display: none;
+  }
+
+  .skillsGridMobile {
+    display: block;
+    margin-top: 15px;
+  }
+
+  .projRowContainer {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  #githubLinkIcon {
+    font-size: 60px;
+  }
+
+  .reactIcon {
+    font-size: 115px;
+    padding-bottom: 45px;
+    margin-left: -20px;
+  }
+
+  #linkedInLinkIcon {
+    font-size: 60px;
+  }
+
+  .footer {
+    display: none;
   }
 
 }
 
 
+@media screen and (max-width: 400px)  {
+
+  .hpContainer {
+    font-size: 24px;
+    max-width: 90%;
+  }
+
+  h2 {
+    &.homepageTitle {
+      padding: 5px;
+      padding-bottom: 10px;
+      
+    }
+
+    &.sectionHeader {
+      font-size:18px;
+      margin: 0;
+    }
+  }
+  
+
+  h3{
+    &.homepageTitle {
+      margin: 0;
+    }
+
+    &.projSubhead {
+      font-size: 18px;
+    }
+  }
+
+  .menuNav {
+    .menuList {
+      padding-right: 8px;
+    }
+  } 
+
+  .sectionContainer {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    // margin-left: 0;
+    // margin-right: 0;
+    max-width: 90%;
+    
+  }
+
+  .mainContainer {
+    margin-left: 10px;
+    margin-right: 10px;
+    max-width: auto;
+  }
+
+  .smallerMe {
+    max-width: 190px;
+    margin-top: 25px;
+    margin-bottom: 10px;
+  }
+
+  .menuList {
+    padding: 5px;
+  }
+
+  a.menuListLink {
+    font-size: 15px;
+    padding: 0 5px;
+    text-align: center;
+  }
+  
+  .colDiv {
+    justify-content: center;
+    margin-top: 20px;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+  }
+
+  p {
+    margin: 0;
+    text-align: center;
+    font-size: 15px;
+
+    &.me {
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+
+    &.proj {
+      padding: 20px 0px;
+      
+    }
+  }
+
+  .iconsContainer {
+    justify-content: center;
+  }
+
+  #contactIcons {
+    justify-content: center;
+  }
+
+  .projCol {
+    margin-left: 0px;
+    margin-right: 0px;
+    justify-content: center;
+  }
+
+  .projImageCol {
+    max-width: 230px;
+    margin: 20px 0 0 0;
+    justify-content: center;
+  }
+
+  #projTextCol {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+
+  #tictac {
+    max-width: 200px;
+    margin: 20px 0 0 0;
+  }
+  
+  .skillsGrid {
+    display: none;
+  }
+
+  .skillsGridMobile {
+    display: block;
+    margin-top: 25px;
+  }
+
+  .projRowContainer {
+    flex-direction: column;
+    text-align: center;
+  }
+  .skillsRow {
+    margin-bottom: 10px;
+  }
+
+  .iconPair {
+    height: 50px;
+    padding: 0;
+  }
+
+  i {
+    font-size: 40px;
+    padding: 3px;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  #githubLinkIcon {
+    font-size: 50px;
+  }
+
+  .reactIcon {
+    font-size: 100px;
+    padding-bottom: 45px;
+    margin-left: -20px;
+  }
+
+  #linkedInLinkIcon {
+    font-size: 50px;
+  }
+
+  .footer {
+    display: none;
+  }
+
+}
 
 
 
