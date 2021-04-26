@@ -32,7 +32,7 @@ export default function Projects() {
 
 
           <div className="projCol">
-            <img src={item.image} className="projImageCol"  id={item.cssId} alt={`${item.name} screenshot.`} />
+            <img src={item.image} className="projImageCol" id={item.cssId} alt={`${item.name} screenshot.`} />
           </div>
 
           <div className="projCol" id="projTextCol">
@@ -49,7 +49,13 @@ export default function Projects() {
               })}
             </div>
 
-            <p className="proj">{item.description}</p>
+            {item.description.map((item, i) => {
+              return <div key={i}>
+                <p>{item}</p>
+              </div>
+            })}
+
+            {/* <p className="proj">{item.description}</p> */}
 
             <div className="iconsContainer">
               <Link to={{ pathname: item.github }} target="_blank" className="iconLink"> <i className=" devicon-github-original" id="githubLinkIcon"></i></Link>

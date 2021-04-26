@@ -14,6 +14,10 @@ export default function Experience() {
         I completed General Assembly&apos;s Software Engineering Immersive: a 12-week intensive course on web development. I learned how to build full-stack applications through daily stand-ups, lectures, labs and projects.
       </p>
 
+      <p> The course covered multiple languages and frameworks, programming fundamentals, best practices, and collaboration and planning tools. </p>
+
+      <p> We also had Q&As with recent graduates and senior engineers to help put the technical learning into context. </p>
+
     </div>
 
     <div className="colDiv">

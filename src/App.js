@@ -23,7 +23,7 @@ const App = () => (
 
     </Switch>
 
-    <Footer />
+    {/* <Footer /> */}
 
   </BrowserRouter>
 )
