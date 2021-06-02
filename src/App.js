@@ -1,5 +1,5 @@
 import React from 'react'
-import { BrowserRouter, Switch, Route } from 'react-router-dom'
+import { HashRouter, Switch, Route } from 'react-router-dom'
 import Home from './components/Home'
 import Menu from './components/Menu'
 import AboutMe from './components/AboutMe'
@@ -11,21 +11,21 @@ import Footer from './components/Footer'
 import './styles/style.scss'
 
 const App = () => (
-  <BrowserRouter>
+  <HashRouter>
 
     <Menu />
 
     <Switch>
-      <Route exact path="/portfolio" component={Home}/>
-      <Route exact path="/portfolio/about-me" component={AboutMe}/>
-      <Route exact path="/portfolio/experience" component={Experience}/>
-      <Route exact path="/portfolio/projects" component={Projects}/>
+      <Route exact path="/" component={Home}/>
+      <Route path="/about-me" component={AboutMe}/>
+      <Route path="/experience" component={Experience}/>
+      <Route path="/projects" component={Projects}/>
 
     </Switch>
 
     {/* <Footer /> */}
 
-  </BrowserRouter>
+  </HashRouter>
 )
 
 // const Home = () => {

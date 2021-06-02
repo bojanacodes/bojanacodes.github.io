@@ -1,26 +1,28 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 
-export default function Menu() {
+import { withRouter } from 'react-router'
+
+function Menu() {
 
   return <div className="menuNav">
 
     <ul className="menuList">
 
       <li>
-        <Link to={'/portfolio'} className="menuListLink">Home</Link>
+        <Link to={'/'} className="menuListLink">Home</Link>
       </li>
 
       <li>
-        <Link to={'/portfolio/about-me'} className="menuListLink">About Me</Link>
+        <Link to={'/about-me'} className="menuListLink">About Me</Link>
       </li>
 
       <li>
-        <Link to={'/portfolio/experience'} className="menuListLink">Experience</Link>
+        <Link to={'/experience'} className="menuListLink">Experience</Link>
       </li>
 
       <li>
-        <Link to={'/portfolio/projects'} className="menuListLink">Projects</Link>
+        <Link to={'/projects'} className="menuListLink">Projects</Link>
       </li>
 
     </ul>
@@ -28,4 +30,6 @@ export default function Menu() {
 
   </div>
 }
+
+export default withRouter(Menu)
 
