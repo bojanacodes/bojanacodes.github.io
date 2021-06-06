@@ -28,8 +28,4 @@ const App = () => (
   </HashRouter>
 )
 
-// const Home = () => {
-//   return <h1>Hello world</h1>
-// }
-
 export default App

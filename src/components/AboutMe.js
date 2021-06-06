@@ -1,5 +1,4 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
 import { HiAtSymbol } from 'react-icons/hi'
 
 export default function AboutMe() {
@@ -20,9 +19,9 @@ export default function AboutMe() {
 
       <p className="me">Contact me:</p>
       <div className="iconsContainer" id="contactIcons">
-        <Link to={{ pathname: 'https://github.com/bojanacodes' }} target="_blank" className="iconLink"> <i className=" devicon-github-original" id="githubLinkIcon"></i></Link>
+        <a href= "https://github.com/bojanacodes" rel="noreferrer" target="_blank" className="iconLink"> <i className=" devicon-github-original" id="githubLinkIcon"></i></a>
 
-        <Link to={{ pathname: 'https://www.linkedin.com/in/bojana-sarenac' }} target="_blank" className="iconLink"> <i className='devicon-linkedin-plain' id="linkedInLinkIcon"></i> </Link>
+        <a href="https://www.linkedin.com/in/bojana-sarenac" rel="noreferrer"  target="_blank" className="iconLink"> <i className='devicon-linkedin-plain' id="linkedInLinkIcon"></i> </a>
 
         <a href="mailto: bojanacodes@gmail.com" className="iconLink"> <HiAtSymbol className="reactIcon" /> </a> 
 

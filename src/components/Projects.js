@@ -1,6 +1,5 @@
 import React, { useState } from 'react'
 import projectData from './ProjectData.js'
-import { Link } from 'react-router-dom'
 import { HiExternalLink } from 'react-icons/hi'
 
 
@@ -55,12 +54,10 @@ export default function Projects() {
               </div>
             })}
 
-            {/* <p className="proj">{item.description}</p> */}
-
             <div className="iconsContainer">
-              <Link to={{ pathname: item.github }} target="_blank" className="iconLink"> <i className=" devicon-github-original" id="githubLinkIcon"></i></Link>
+              <a href={item.github} rel="noreferrer" target="_blank" className="iconLink"> <i className=" devicon-github-original" id="githubLinkIcon"></i></a>
 
-              <Link to={{ pathname: item.link }} target="_blank " className="iconLink"><HiExternalLink className="reactIcon" /></Link>
+              <a href={item.link} rel="noreferrer" target="_blank" className="iconLink"><HiExternalLink className="reactIcon" /></a>
             </div>
 
           </div>
